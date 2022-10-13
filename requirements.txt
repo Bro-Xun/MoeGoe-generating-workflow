@@ -6,3 +6,6 @@ torch
 Unidecode
 openjtalk>=0.3.0.dev2
 jamo
+tensorflow-gpu
+cn2an
+
