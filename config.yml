@@ -1,0 +1,15 @@
+#please make sure the number of your models before you submit
+config_path: F:\Desktop\MoeGoe\config.json
+model_path: F:\Desktop\MoeGoe\1374_epochs.pth
+##########
+## choose one of following options
+argument_path: F:\Desktop\haochi.txt
+argument_lang: "[ZH]" #pay attention to supported languages
+#OR
+audio_dir: ###audio_directory: audio input must be in form of ms-wav(*.wav)
+origin: ###Original speaker ID
+target: ###Target speaker ID
+##########
+output_path: F:\Desktop\haochi\
+method: t #t for text2voice while v for voice2voice
+time_gap: 0.2 #time gap between each process
