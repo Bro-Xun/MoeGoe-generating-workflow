@@ -18,7 +18,6 @@
 ```
 #会员制餐厅 [4]
 #对话
-
 本餐厅就是为了那些对各种美味食物已经感到厌倦了的人们 [1]
 为他们提供与之身份相应的食物
  [2]
@@ -34,7 +33,7 @@
 
 [3]: use `[blank]2(a number)` to choose the model this sentence uses (default `[blank]1`)
 
-[4]: use `#` at the start of a line to create an annotation line
+[4]: use `#` at the start of a line to create an annotation line (**dont use [3] [4] together**)
 
 **it must be a plain text file.**
 
