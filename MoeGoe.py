@@ -83,6 +83,7 @@ if __name__ == '__main__':
     text_list_data = text_list_file.read()
     text_list_file.close()
     text_list_data = text_list_data.replace('\n\n','\n')
+    text_list_data = re.sub('#.*?\n','',text_list_data)
     text_list = text_list_data.split('\n')
 
     escape=False #non-stop workflow
@@ -139,7 +140,7 @@ if __name__ == '__main__':
 
                     stn_tst = get_text(text, hps_ms, cleaned=cleaned)
                     
-                    print_speakers(speakers,escape)
+                    #print_speakers(speakers,escape)
                     speaker_id = model_num - 1
                     out_path = config_data['output_path'] + str(numb) + '.wav'
 
@@ -165,7 +166,7 @@ if __name__ == '__main__':
                 audios = re.findall('(.*?).wav','\n'.join(audio_dir))
                 for i in audios:
                     audio_path = audio_dir + i + '.wav'
-                    print_speakers(speakers)
+                    #print_speakers(speakers)
                     audio = utils.load_audio_to_torch(audio_path, hps_ms.data.sampling_rate)
 
                     originnal_id = config_data['origin']

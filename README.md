@@ -4,6 +4,7 @@
 
 ## usage
 
+- install requirements in `requirements.txt`
 - prepare the argument list (if choosing `t` mode)
 - edit `config.yml`
 - run `MoeGoe.py`
@@ -14,25 +15,26 @@
 
 *a simple example:*
 
-<big>“</big>
+```
+#会员制餐厅 [4]
+#对话
 
-本餐厅就是为了那些对各种美味食物已经感到厌倦了的人们 [^1]
-
+本餐厅就是为了那些对各种美味食物已经感到厌倦了的人们 [1]
 为他们提供与之身份相应的食物
-
- [^2]
-
+ [2]
 欢迎光临~
-
-欢迎光临~ 2 [^3]
-
-<big>”</big>
+欢迎光临~ 2 [3]
+```
 
 ---
 
-[^1]: use a whole line to express one sentence
-[^2]: you are able to use a blank line to make the list easier to read
-[^3]: use `[blank]2(a number)` to choose the model this sentence uses (default `[blank]1`)
+[1]: use a whole line to express one sentence
+
+[2]: you are able to use a blank line to make the list easier to read
+
+[3]: use `[blank]2(a number)` to choose the model this sentence uses (default `[blank]1`)
+
+[4]: use `#` at the start of a line to create an annotation line
 
 **it must be a plain text file.**
 
