@@ -116,14 +116,17 @@ if __name__ == '__main__':
                 for i in text_list:
                     model_num = 1
                     ends = i[-2::]
-                    print(ends)
+                    #print(ends)
                     if not len(ends) == 2:
+                        print(i)
                         text = lang + i + lang
                     else:
                         if ends[1] in ['1','2','3','4','5','6','7','8','9','0']:
                             model_num = int(ends[1])
+                            print(i[:-2:])
                             text = lang + i[:-2:] + lang
                         else:
+                            print(i)
                             text = lang + i + lang
 
                     
@@ -157,7 +160,7 @@ if __name__ == '__main__':
                     print('succeed writting into {}.wav'.format(numb))
                     numb += 1
 
-                    break
+                break
                 
                     
             elif choice == 'v':
@@ -190,7 +193,7 @@ if __name__ == '__main__':
                     time.sleep(config_data['time_gap'])
                     print('succeed writting into {}.wav'.format(i))
 
-                    break               
+                break               
 
     else:
         model = input('Path of a hubert-soft model: ')
